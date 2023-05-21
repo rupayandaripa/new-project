@@ -1,0 +1,24 @@
+name: Deployment Workflow
+ 
+ 
+
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add necessary steps for building and testing your code
+      
+      - name: Upload a Build Artifact
+  uses: actions/upload-artifact@v3.1.2
+
+
